@@ -31,26 +31,26 @@ public class Company {
 
 
 
-    public Boolean searchEmpplyeeByFirstName(String FirstName){
+    public String searchEmpplyeeByFirstName(String FirstName){
         int i=0;
         for (Person employee : employeeList){
             if (employee.getFirstName().equals(FirstName)){
-                return  true;
+                return  FirstName;
             }
         }
-                return false;
+                return "No";
         }
 
-    public Boolean searchEmpplyeeByLastName(String LastName){
+    public String searchEmpplyeeByLastName(String LastName){
         int i=0;
         while (i< employeeList.size()){
             String employee = employeeList.get(i).getLastName();
             if (employee == LastName){
-                return true;
+                return LastName;
             }
             i++;
         }
-        return false;
+        return "No";
     }
 
 

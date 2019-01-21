@@ -1,6 +1,8 @@
 package lesson3;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Map;
 
 public class Main {
 
@@ -22,7 +24,12 @@ public class Main {
         System.out.println("Empplyee with FirstName firstname1  "+Mytest.searchEmpplyeeByFirstName("firstname1"));
         System.out.println("Empplyee with LastName lastname1    "+Mytest.searchEmpplyeeByLastName("lastname1"));
 
+        HashSet<Person> setOfPerson = new HashSet<Person>(employeeList);
+        for (Person person:setOfPerson){
+            System.out.println(person.getFirstName());
+        }
 
+        System.out.println(first);
 
     }
 

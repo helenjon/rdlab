@@ -1,4 +1,4 @@
-package lesson6.transport;
+package lesson6.part1.transport;
 
 public class Train implements Transport {
 

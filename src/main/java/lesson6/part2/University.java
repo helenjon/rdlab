@@ -1,4 +1,4 @@
-package lesson4.part1;
+package lesson6.part2;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,7 @@ public class University {
 
     private String universityName;
     private ArrayList<Student> listOfStudentsResult = new ArrayList<Student>();
+    private Faculty faculty ;
 
     public void setStydentsList(ArrayList<Student> stydentsList) {
         this.stydentsList = stydentsList;
@@ -79,5 +80,10 @@ public class University {
         return listOfStudentsResult;
     }
 
+    public void getListofFaculty(){
+        for (Faculty f: faculty){
+            faculty.
+        }
+    }
 
 }

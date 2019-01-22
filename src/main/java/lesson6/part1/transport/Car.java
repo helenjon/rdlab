@@ -1,4 +1,4 @@
-package lesson6.transport;
+package lesson6.part1.transport;
 
 public class Car implements Transport{
 
@@ -9,6 +9,7 @@ public class Car implements Transport{
         this.wheels = wheels;
     }
 
+    @Override
     public void fuel() {
         System.out.println(fuel);
                   }
@@ -22,6 +23,6 @@ public class Car implements Transport{
     }
 
     public void wheels(){
-        System.out.println("Car with 4 wheels");
+        System.out.println("Car with " + wheels + " wheels");
     }
 }

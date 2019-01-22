@@ -1,4 +1,4 @@
-package lesson4.part1;
+package lesson6.part2;
 
 
 public class Student extends Person {

@@ -1,6 +1,6 @@
-package lesson6.transport;
+package lesson6.part1.transport;
 
-public class Ship implements Transport {
+public class Ship implements Transport, lesson6.part1.ships.Ship {
 
 
 
@@ -15,7 +15,6 @@ public class Ship implements Transport {
     }
 
     public void pipes(){
-
     }
 
-}
+    }

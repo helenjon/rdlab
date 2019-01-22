@@ -1,4 +1,4 @@
-package lesson6.ships;
+package lesson6.part1.ships;
 
 public class Tanker implements Ship {
 

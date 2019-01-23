@@ -6,6 +6,7 @@ public enum  Faculty {
     Energy,
     Mashinery;
 
+
 }
 
 

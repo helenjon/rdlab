@@ -4,12 +4,12 @@ package lesson6.part2;
 public class Student extends Person {
 
 
-    private Integer id, phone, course;
-    private String faculty, address, group;
+    private Integer id, phone ;
+    private String faculty, address, group,course;
 
 
 
-    public Student(String firstName, String secondName, Integer id, Integer course, String faculty, String group) {
+    public Student(String firstName, String secondName, Integer id, String course, String faculty, String group) {
         super(firstName, secondName);
         this.id = id;
         this.course = course;
@@ -18,7 +18,7 @@ public class Student extends Person {
 
     }
 
-    public Student(Person person, Integer id, Integer course, String faculty, String group) {
+    public Student(Person person, Integer id, String course, String faculty, String group) {
         super(person.getFirstName(),person.getSecondName());
         this.id = id;
         this.course = course;
@@ -44,11 +44,11 @@ public class Student extends Person {
         this.phone = phone;
     }
 
-    public Integer getCourse() {
+    public String getCourse() {
         return course;
     }
 
-    public void setCourse(Integer course) {
+    public void setCourse(String course) {
         this.course = course;
     }
 

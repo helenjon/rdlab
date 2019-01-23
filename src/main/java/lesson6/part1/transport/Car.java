@@ -14,10 +14,11 @@ public class Car implements Transport{
         System.out.println(fuel);
                   }
 
+    @Override
     public void colour() {
         System.out.println();
     }
-
+    @Override
     public void speed() {
 
     }

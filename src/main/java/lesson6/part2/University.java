@@ -80,10 +80,6 @@ public class University {
         return listOfStudentsResult;
     }
 
-    public void getListofFaculty(){
-        for (Faculty f: faculty){
-            faculty.
-        }
-    }
+
 
 }

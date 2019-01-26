@@ -81,5 +81,34 @@ public class University {
     }
 
 
+    private void printFacultyList(){
+        for (Faculty faculty : Faculty.values()) {
+            System.out.println(faculty);
+        }
+    }
 
-}
+    private void printCoursesList() {
+        for (CourseList course : CourseList.values()) {
+            System.out.println(course);
+        }
+    }
+
+    private void printGroupList() {
+            for (GroupList group : GroupList.values()) {
+                System.out.println(group);
+            }
+
+        }
+
+    PrintList print;
+    public void print(PrintList print){
+
+        switch (print){
+            case courseList: printFacultyList(); break;
+            case groupList: printGroupList(); break;
+            case facultyList: printFacultyList(); break;
+        }
+    }
+
+
+    }

@@ -8,7 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class FacebookMainPage {
+import static Lesson10.stepdefinition.LoginTestStepDefinition.driver;
+
+public class FacebookMainPage extends AbstractPage  {
+
+    public FacebookMainPage() {
+        PageFactory.initElements(driver, this);
+    }
 
 
 }

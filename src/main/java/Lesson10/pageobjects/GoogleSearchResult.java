@@ -16,9 +16,19 @@ public class GoogleSearchResult extends AbstractPage {
 
 
     @FindBy(xpath = "//div[1]//table/tbody/tr[2]/td[1]//span//a")
-    private WebElement link;
+    private WebElement linkFacebook;
+
+
+
 
     public void clickFacebookLink(){
-       link.click();
+        linkFacebook.click();
     }
+
+
+
+
 }
+
+
+

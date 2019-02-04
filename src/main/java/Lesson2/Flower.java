@@ -6,16 +6,17 @@ public class Flower {
     String colour;
     Boolean isAlive;
 
-    Flower(){}
+    Flower() {
+    }
 
-    Flower(String name, String colour){
+    Flower(String name, String colour) {
         this.name = name;
         this.colour = colour;
         this.isAlive = true;
     }
 
 
-    public void setIsAlive (Boolean isAlive){
+    public void setIsAlive(Boolean isAlive) {
         this.isAlive = isAlive;
     }
 

@@ -1,9 +1,6 @@
 package Lesson10.pageobjects;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ByIdOrName;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,6 +23,8 @@ public class FaсebookLoginPage extends AbstractPage{
     @FindBy(id = "loginbutton")
     private WebElement loginbutton;
 
+    @FindBy(xpath = "//div[@class=\"_4rbf _53ij\"]")
+    public WebElement w;
 
     public void entercredentials (String email, String password){
         emailField.sendKeys(email);
@@ -33,9 +32,12 @@ public class FaсebookLoginPage extends AbstractPage{
 
     }
 
+
     public void clickLogin(){
         loginbutton.click();
     }
+
+
 
 
 

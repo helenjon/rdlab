@@ -56,11 +56,11 @@ public class apitesting {
 
        //       given().baseUri("https://developers.ria.com/auto/models").pathParam("marka_id", "")
 
-//            given().
-//                    get(baseURI).
-//                    then().
-//                    assertThat().
-//                    body("name",hasSize(numberOfRaces));
+            given().
+                    get(baseURI).
+                    then().
+                    assertThat().
+                    body("name",hasSize(numberOfRaces));
 
 
             //            given().
